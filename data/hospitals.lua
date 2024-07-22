@@ -84,26 +84,30 @@ return {
                 }
             },
         },
-        garage = {
-            ['ems_garage_1'] = {
-                pedPos = vector4(291.2237, -614.9087, 42.4234, 332.9413),
-                model = 'mp_m_weapexp_01',
-                spawn = vector4(294.28, -608.32, 43.32, 69.6),
-                deposit = vector3(294.28, -608.32, 43.32),
-                driverSpawnCoords = vector3(297.56, -600.52, 43.32),
-
-                vehicles = {
-                    {
-                        label = 'Ambulance',
-                        spawn_code = 'ambulance',
-                        min_grade = 3,
-                        modifications = {} -- es. {color1 = {255, 12, 25}}
-                    },
+        garages = {
+            enable = false,
+            npcs = {
+                ['ems_garage_1'] = {
+                    pedPos = vector4(291.2237, -614.9087, 42.4234, 332.9413),
+                    model = 'mp_m_weapexp_01',
+                    spawn = vector4(294.28, -608.32, 43.32, 69.6),
+                    deposit = vector3(294.28, -608.32, 43.32),
+                    driverSpawnCoords = vector3(297.56, -600.52, 43.32),
+    
+                    vehicles = {
+                        {
+                            label = 'Ambulance',
+                            spawn_code = 'ambulance',
+                            min_grade = 3,
+                            modifications = {} -- es. {color1 = {255, 12, 25}}
+                        },
+                    }
                 }
             }
+            
         },
         clothes = {
-            enable = true,
+            enable = false,
             pos = vector4(300.7454, -597.4542, 42.2918, 298.0781),
             model = 'a_f_m_bevhills_01',
             male = {
